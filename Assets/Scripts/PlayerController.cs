@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     public void Die()
     {
         GameManager.Instance.AddDeath();
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 
     public void LoadData(GameData data)
@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         this.transform.position = data.playerPosition;
     }
 
-    public void SaveData(ref GameData data)
+    public void SaveData(GameData data)
     {
         data.playerPosition = this.transform.position;
     }

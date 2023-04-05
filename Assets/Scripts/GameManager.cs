@@ -27,11 +27,21 @@ public class GameManager : MonoBehaviour, IDataPersistance
         coinsText.text = "Coins: " + collectedCoins + "/" + maxCoins;
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            DataPersistanceManager.instance.SaveGame();
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        }
+    }
+
     public void AddDeath()
     {
         deaths++;
         deathsText.text = "Deaths: " + deaths;
-        Instantiate(playerGO, Vector2.zero, Quaternion.identity);
+        playerGO.transform.position = Vector3.zero;
+        //Instantiate(playerGO, Vector2.zero, Quaternion.identity);
     }
 
     public void AddCoin()
@@ -53,7 +63,7 @@ public class GameManager : MonoBehaviour, IDataPersistance
         this.deaths = data.deathCount;
     }
 
-    public void SaveData(ref GameData data)
+    public void SaveData(GameData data)
     {
         data.deathCount = this.deaths;
     }

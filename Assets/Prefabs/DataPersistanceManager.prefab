@@ -44,5 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcd6e9612dde27946bb2f65ef0aea26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fileName: data.game
+  disableDataPersistance: 0
+  initializeDataIfNull: 1
+  overrideSelectedProfileId: 1
+  testSelectedProfileId: test
+  fileName: data.json
   useEncryption: 0

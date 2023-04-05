@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -751,7 +751,7 @@ MonoBehaviour:
   maxCoins: 4
   collectedCoins: 0
   coinsText: {fileID: 710016482}
-  playerGO: {fileID: 3892988227788247049, guid: 957b4a520c5c3254f9b02bba77164330, type: 3}
+  playerGO: {fileID: 3892988228345371819}
 --- !u!4 &766691016
 Transform:
   m_ObjectHideFlags: 0
@@ -2744,6 +2744,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 957b4a520c5c3254f9b02bba77164330, type: 3}
+--- !u!1 &3892988228345371819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3892988227788247049, guid: 957b4a520c5c3254f9b02bba77164330, type: 3}
+  m_PrefabInstance: {fileID: 3892988228345371818}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5394507304447657414
 PrefabInstance:
   m_ObjectHideFlags: 0
